@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+}
+.slogen{
+  margin: 0 5vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.highlight{
+  color:rgb(241, 133, 151);
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  margin-top: 70px;
+  height: 1378/2px;
+}
+
+h1{
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  line-height: 5rem;
+}
+p{
+  font-size:1.2rem;
+  max-width: 500px;
+  color: rgb(0, 0, 0);
+  padding-left: .75rem;
+}
+
+.imgdiv{
+  display: flex;
+  align-items: flex-end;
+}
+
+@media(max-width:950px){
+  h1{
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width:750px){
+  .imgdiv{
+    display: none;
+  }
+  h1{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  section, main{
+    padding:3rem;
+  }
+  section{
+    max-height: none;
+    height: 500px;
+  }
+}
+
+section{
+  background-color: rgb(241, 133, 151);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+section p{
+  color: white;
+  font-size: 2rem;
+}
+section a{
+  color:rgb(241, 133, 151);
+  text-decoration: none;
+}
+button{
+  border: none;
+  font-size: 1.75rem;
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap:3rem;
+  padding-top: 2rem;
+}
+
+.card{
+  color: black;
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  
+  transition: .4s;
+}
+.card:hover{
+ box-shadow: 0 .5rem 1rem 0.02rem rgba(0, 0, 0, 0.281);
+ transform: translate(0,-.7rem);
+ transition: .4s;
+}
+
+.card div{
+  font-size: 1rem;
+}
+.name{
+  padding: 1rem 0;
+  font-weight: bolder;
+  transition: .3s;
+}
+.card:hover .name{
+  color: rgb(241, 133, 151);
+  transition: .3s;
+}
+.card .image{
+ display: flex;
+ justify-content: center;
+}
+.card p{
+  color: white;
+  margin: 1rem 0;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card div{
+  color: black;
+}
+.card:hover, .card .atag:hover{
+  text-decoration: none;
+}
+.bronzer{
+  background-color: rgb(134, 75, 75);
+}
+.blush{
+  background-color: rgb(224, 141, 141);
+}
+.lip_liner{
+  background-color: rgb(189, 50, 108);
+}
+.foundation{
+  background-color: rgb(122, 96, 77);
+
+}
+.eyeshadow{
+  background-color: rgb(68, 62, 62);
+
+}
+.eyeliner{
+  background-color: rgb(43, 40, 41);
+
+}
+.nail_polish{
+  background-color: rgb(180, 170, 170);
+
+}
+.lipstick{
+  background-color: rgb(231, 144, 180);
+
+}
+.mascara{
+  background-color: rgb(147, 189, 112);
+}
+.page_container{
+ text-align: center;
+ margin-top: 1rem;
+}
+.page_container button{
+  font-size: 1rem;
+  padding: .25rem .6rem;
+  margin: .5rem;
+  border-radius: 10px;
+  border: .15rem solid rgb(102, 102, 102);
+  color:rgb(102, 102, 102);
+  cursor: pointer;
+}
+.page_container .activated{
+  background-color: rgb(241, 133, 151);
+  border-radius: 10px;
+  border: .15rem solid rgb(241, 133, 151);
+  color:white;
+  transform: scale(1.25);
+  transition: 0.2s;
+}

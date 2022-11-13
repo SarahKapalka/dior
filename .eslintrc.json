@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "no-console": "error",
+    "react/prop-types": 0,
+    "consistent-return": 1,
+    "no-param-reassign": 0,
+    "react/display-name": 0,
+    "no-underscore-dangle": 0,
+    "react/button-has-type": 1,
+    "react/no-children-prop": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unused-prop-types": 1,
+    "react/require-default-props": 0,
+    "react/no-unescaped-entities": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-key": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "no-unused-vars": [
+      1,
+      {
+        "ignoreRestSiblings": false
+      }
+    ]
+  }
+}
