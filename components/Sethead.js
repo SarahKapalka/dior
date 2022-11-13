@@ -9,6 +9,8 @@ export default function Sethead({ title }) {
   const structuredData = {
     "@context": "https://schema.org/",
     "@type": "Organization",
+    "name": "MakeUp",
+    "image": "/logo.png",
     "brand": "Dior",
     "email": "onlinecare.my@dior.com.my",
     "telephone": "1 (800) 929-3467"
