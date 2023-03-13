@@ -5,11 +5,7 @@
   font-family: "Work Sans";
 }
 .slogen{
-  margin: 0 5vw;
-  display: flex;
-  flex-flow: column;
-  justify-content: stretch;
-  align-items: stretch;
+  margin: 2rem;
 }
 .highlight{
   color:rgb(241, 133, 151);
@@ -17,16 +13,20 @@
 .main{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: stretch;
   
+}
+.imgdiv{
+  max-width: 370px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 main{
   display: flex;
-  align-items: center;
-  justify-content:flex-end;
+  justify-content: space-between;
   margin-top: 70px;
   height: 1378/2px;
+  width: 100vw;
 }
 
 h1{
@@ -34,6 +34,7 @@ h1{
   margin-bottom: 1rem;
   font-weight: bolder;
   line-height: 5rem;
+  width: min-content;
 }
 p{
   font-size:1.2rem;
@@ -42,32 +43,36 @@ p{
   padding-left: .75rem;
 }
 
-.imgdiv{
-  display: flex;
-  align-items: flex-end;
-}
-
-@media(max-width:950px){
+@media(max-width:1100px){
   h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
+
 }
 
-@media(max-width:750px){
+@media(max-width:850px){
   .imgdiv{
     display: none;
   }
   h1{
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
   }
   section, main{
-    padding:3rem;
+    padding:0;
+    margin: 5rem 0 0 0;
   }
   section{
     max-height: none;
-    height: 500px;
+    height: 400px;
   }
+}
+@media(max-width:650px){
+  h1{
+    font-size: 2rem;
+  }
+
 }
 
 section{

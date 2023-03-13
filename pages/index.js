@@ -7,22 +7,24 @@ export default function Home() {
     <Layout>
       <Sethead title="Dior" />
       <div className="main">
-        <main>
-          <div className="slogen">
-            <h1>
-              Dior
-              <span className="highlight"> MakeUp</span>
-              catalogue
-            </h1>
-            <p>
-              window shop stress-free with us today and explore the glamorous variety Dior
-              has to offer in the makeup industry.
-            </p>
-          </div>
-          <div className="imgdiv">
-            <Image src="/model.png" height={1378 / 2} width={1378 / 2} className="image" />
-          </div>
-        </main>
+        <div>
+          <main>
+            <div className="slogen">
+              <h1>
+                Dior
+                <span className="highlight"> MakeUp</span>
+                catalogue
+              </h1>
+              <p>
+                window shop stress-free with us today and explore the glamorous variety Dior
+                has to offer in the makeup industry.
+              </p>
+            </div>
+            <div className="imgdiv">
+              <Image src="/model.png" height={1378 / 2} width={1378 / 2} className="image" />
+            </div>
+          </main>
+        </div>
         <section>
           <div className="imgdiv">
             <Image src="/model2.png" height={1378 / 2.5} width={1378 / 2.5} className="image" />
